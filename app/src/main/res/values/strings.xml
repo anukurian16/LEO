@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LEO</string>
+    <string name="action_settings">Settings</string>
+    <string name="move">move</string>
+    <string name="stop">stop</string>
+    <string name="right">right</string>
+    <string name="left">left</string>
+    <string name="calibrate">calibrate</string>
+</resources>

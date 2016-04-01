@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#F39CA4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.akurian.leo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/calibrateButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/move"
+        android:background="#C36AF2"
+        android:id="@+id/moveButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toggleButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left"
+        android:background="#C36AF2"
+        android:id="@+id/leftButton"
+        android:layout_below="@+id/moveButton"
+        android:layout_toStartOf="@+id/moveButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/right"
+        android:background="#C36AF2"
+        android:id="@+id/rightButton"
+        android:layout_below="@+id/moveButton"
+        android:layout_toEndOf="@+id/moveButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:background="#C36AF2"
+        android:id="@+id/stopButton"
+        android:layout_below="@+id/leftButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calibrate"
+        android:background="#C36AF2"
+        android:id="@+id/calibrateButton"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/stopButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:background="#C36AF2"
+        android:id="@+id/textView"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/listView1"
+        android:layout_alignStart="@+id/stopButton" />
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/listView1"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/calibrateButton"
+        android:layout_alignStart="@+id/leftButton" />
+
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/listView2"
+        android:layout_alignTop="@+id/listView1"
+        android:layout_toEndOf="@+id/stopButton" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAlignment="center"
+        android:background="#C36AF2"
+        android:text="Frequency"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/listView2"
+        android:layout_alignStart="@+id/listView1" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Temp"
+        android:textAlignment="center"
+        android:background="#C36AF2"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/listView2"
+        android:layout_alignStart="@+id/listView2" />
+</RelativeLayout>
